@@ -7,8 +7,8 @@ import java.net.Socket;
 
 
 /**
- * Client uses this Runnable to send messages to the server. Sends a message to
- * the chat server in a separate Runnable.
+ * Client uses this Runnable to send messages to the chat server in a separate
+ * runnable.
  *
  * @author 0laprogrmr@gmail.com
  */
