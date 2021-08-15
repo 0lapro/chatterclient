@@ -180,7 +180,7 @@ public class ClientGUI {
             public void windowClosing(WindowEvent event) {
                 getChatController().disconnect();
                 System.exit(0);
-            } // end method windowClosing
+            } // end windowClosing
         } // end anonymous inner class
         );// end call to addWindowListener
 
@@ -214,8 +214,8 @@ public class ClientGUI {
 
     /**
      * Contains code to execute when the connect button is pressed. This block
-     * of code is normally in the actionPerformed method but I chose to make it
-     * one separate method to avoid repeating it twice inside both the
+     * of code is normally in the actionPerformed but I chose to make it
+     * one separate to avoid repeating it twice inside both the
      * connectButton and connectMenuItem actionPerformed methods.
      */
     private void connect() {
@@ -235,8 +235,8 @@ public class ClientGUI {
 
     /**
      * Contains code to execute when the connect button is pressed. This block
-     * of code is normally in the actionPerformed method but I chose to make it
-     * one separate method to avoid repeating it twice inside both the
+     * of code is normally in the actionPerformed but I chose to make it
+     * one separate to avoid repeating it twice inside both the
      * connectButton and connectMenuItem actionPerformed methods.
      */
     private void disconnect() {
@@ -427,8 +427,11 @@ public class ClientGUI {
         this.serverStopped = serverStatus;
     }
 
-    private class EnterListener implements KeyListener {
+    public static long getSerialVersionUid() {
+        return SERIAL_VERSION_UID;
+    }
 
+    private class EnterListener implements KeyListener {
         @Override
         public void keyTyped(KeyEvent e) {
         }
@@ -462,7 +465,7 @@ public class ClientGUI {
         public void receiveMessage(String from, String message) {
             // append message using MessageDisplayer
             SwingUtilities.invokeLater(new MessageDisplayer(from, message));
-        } // end method messageReceived
+        } // end messageReceived
     } // end MyMessageListener inner class
 
     // Displays new message by appending message to JTextArea.  Should
@@ -483,7 +486,7 @@ public class ClientGUI {
         public void run() {
             // append new message
             getMessageArea().append("\n" + fromUser + "> " + messageBody);
-        } // end method run      
+        } // end run      
     } // end MessageDisplayer inner class
 } // end class ClientGUI
 
