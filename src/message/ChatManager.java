@@ -1,9 +1,9 @@
-package message;
+package chatterclient.src.message;
 
-import runner.MessageSender;
-import interfaces.MessageListener;
-import static interfaces.ServiceConstants.DISCONNECT_STRING;
-import runner.MessageReceiver;
+import chatterclient.src.runner.MessageSender;
+import chatterclient.src.interfaces.MessageListener;
+import static chatterclient.src.interfaces.ServiceConstants.DISCONNECT_STRING;
+import chatterclient.src.runner.MessageReceiver;
 import java.net.InetAddress;
 import java.net.Socket;
 import java.io.IOException;
@@ -13,8 +13,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 import java.util.concurrent.RejectedExecutionException;
-import interfaces.ChatControl;
-
+import chatterclient.src.interfaces.ChatControl;
 
 /**
  * Used by client to communicate with MessengerServer using Sockets and

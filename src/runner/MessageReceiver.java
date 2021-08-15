@@ -1,10 +1,10 @@
-package runner;
+package chatterclient.src.runner;
 
-import interfaces.MessageListener;
-import static interfaces.ServiceConstants.MESSAGE_SEPARATOR;
-import static interfaces.ServiceConstants.MESSAGE_SIZE;
-import static interfaces.ServiceConstants.MULTICAST_ADDRESS;
-import static interfaces.ServiceConstants.MULTICAST_LISTENING_PORT;
+import chatterclient.src.interfaces.MessageListener;
+import static chatterclient.src.interfaces.ServiceConstants.MESSAGE_SEPARATOR;
+import static chatterclient.src.interfaces.ServiceConstants.MESSAGE_SIZE;
+import static chatterclient.src.interfaces.ServiceConstants.MULTICAST_ADDRESS;
+import static chatterclient.src.interfaces.ServiceConstants.MULTICAST_LISTENING_PORT;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.MulticastSocket;
@@ -13,9 +13,9 @@ import java.net.SocketTimeoutException;
 import java.util.StringTokenizer;
 
 /**
- * Client uses this Runnable to receive datagram packets from the server
- MessageReceiver listens for DatagramPackets containing messages from the
- server. Receives datagram packets.
+ * Client uses this Runnable to receive datagram packets from the server 
+ * MessageReceiver listens for DatagramPackets containing messages from the
+ * server. Receives datagram packets.
  *
  * @author 0laprogrmr@gmail.com
  */

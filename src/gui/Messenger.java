@@ -1,9 +1,9 @@
-package gui;
+package chatterclient.src.gui;
 
-import static interfaces.ServiceConstants.SERVER_PORT;
+import static chatterclient.src.interfaces.ServiceConstants.SERVER_PORT;
 import javax.swing.SwingUtilities;
-import message.ChatManager;
-import interfaces.ChatControl;
+import chatterclient.src.message.ChatManager;
+import chatterclient.src.interfaces.ChatControl;
 
 /**
  * Messenger is a chat application that uses a ClientGUI and ChatManager to
@@ -22,7 +22,7 @@ public class Messenger {
         }
         //Lambda expression
         SwingUtilities.invokeLater(() -> {
-            ClientGUI clientGUI = new ClientGUI(chatController);
+            new ClientGUI(chatController);
         });
     } // end main
 } // end class Messenger

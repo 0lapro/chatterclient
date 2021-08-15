@@ -1,4 +1,4 @@
-package interfaces;
+package chatterclient.src.interfaces;
 
 /**
  * MessageListener is an interface for classes that wish to receive new chat

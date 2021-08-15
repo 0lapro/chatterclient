@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package interfaces;
+package chatterclient.src.interfaces;
 
 /**
  * ServiceConstants defines constants for 
@@ -34,4 +34,3 @@ public interface ServiceConstants {
     // message size (in bytes)
     public static final int MESSAGE_SIZE = 512;
 } // end interface ServiceConstants
-

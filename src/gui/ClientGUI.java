@@ -1,6 +1,6 @@
-package gui;
+package chatterclient.src.gui;
 
-import interfaces.MessageListener;
+import chatterclient.src.interfaces.MessageListener;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
@@ -24,7 +24,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.SwingUtilities;
 import javax.swing.border.BevelBorder;
-import interfaces.ChatControl;
+import chatterclient.src.interfaces.ChatControl;
 
 /**
  * ClientGUI provides a user interface for sending and receiving messages to and

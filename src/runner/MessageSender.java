@@ -1,10 +1,9 @@
-package runner;
+package chatterclient.src.runner;
 
-import static interfaces.ServiceConstants.MESSAGE_SEPARATOR;
+import static chatterclient.src.interfaces.ServiceConstants.MESSAGE_SEPARATOR;
 import java.io.IOException;
 import java.util.Formatter;
 import java.net.Socket;
-
 
 /**
  * Client uses this Runnable to send messages to the chat server in a separate
@@ -55,5 +54,4 @@ public class MessageSender implements Runnable {
     public void setOutputFormatter(Formatter outputFormatter) {
         this.outputFormatter = outputFormatter;
     }
-
 } // end class MessageSender
