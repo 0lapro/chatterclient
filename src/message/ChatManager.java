@@ -7,7 +7,6 @@ import chatterclient.src.runner.MessageReceiver;
 import java.net.InetAddress;
 import java.net.Socket;
 import java.io.IOException;
-// import java.util.Queue;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.ExecutionException;
