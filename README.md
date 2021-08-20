@@ -5,7 +5,7 @@ This program is free for learning and educational purposes.
 A stand-alone instant messenger client with simple GUI that allows you to chat with other users.
 
 ## Semantics
-Everything in the program is named to reflect its purpose. The naming of the packages, classes, objects, methods, and variables are semantically correct and they all reflect what they do in the program. This makes writing test cases unambiguous and testing more meaningful.
+Everything in the program is named to reflect its purpose. This makes writing test cases unambiguous and testing more meaningful.
 
 ## Object-Oriented approach
 1. The OOP approach separates concerns and allows room for easy improvement so anyone can improve this application as suitable.
