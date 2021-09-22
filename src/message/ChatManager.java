@@ -31,7 +31,6 @@ public class ChatManager implements ChatControl {
     private boolean connectionDropped = true;
     private boolean disconnectClicked;
     private MessageListener msgListener;
-    // private Queue<String> msgQueue;
 
     /**
      * @param address
