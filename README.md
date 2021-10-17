@@ -1,7 +1,7 @@
 ### Disclaimer
 This program is free for learning and educational purposes. 
 
-# Chatterclient
+# chat client
 A stand-alone instant messenger client with simple GUI that allows you to chat with other users.
 
 ## Semantics
